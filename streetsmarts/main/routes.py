@@ -8,7 +8,7 @@ import json
 from sqlalchemy import select #, create_engine
 from sqlalchemy.sql.expression import func, literal
 
-import folium
+#import folium
 
 
 main = Blueprint('main', __name__)
