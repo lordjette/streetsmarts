@@ -39,39 +39,3 @@ def create_app(config_class=Config):
     
     return app
 
-
-    '''
-    # :flags:
-
-    from flask import Flask
-    from config import Config
-    from flask_sqlalchemy import SQLAlchemy, event
-
-    db = SQLAlchemy()
-
-    def create_app():
-        global db
-        app = Flask(name)
-
-    app.config....
-    db.init_app(app)
-
-    with app.app_context():
-        @event.listens_for(db.engine, "first_connect")
-        def connect(sqlite, connection_rec):
-            sqlite.enable_load_extension(True)
-            sqlite.execute("SELECT load_extension('C:\\spatialite32\\mod_spatialite')")
-            sqlite.enable_load_extension(False)
-
-        @event.listens_for(db.engine, "connect")
-        def connect(sqlite, connection_rec):
-            sqlite.enable_load_extension(True)
-            sqlite.execute("SELECT load_extension('C:\\spatialite32\\mod_spatialite')")
-            sqlite.enable_load_extension(False)
-
-    return app
-
-    app = create_app()
-
-    from app import routes, models
-    '''
