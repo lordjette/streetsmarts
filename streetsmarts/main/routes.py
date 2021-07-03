@@ -52,9 +52,24 @@ def map_finance():
 def map_transpo():
     return render_template('map_transpo.html')
 
+# @main.route('/map_health')
+# def map_health():
+#     return render_template('map_health.html')
+
 @main.route('/map_health')
 def map_health():
+    #start_coords = (14.6091, 121.0223)
+    #folium_map = folium.Map(location=start_coords, zoom_start=14)
+    #return folium_map._repr_html_()
     return render_template('map_health.html')
+
+
+@main.route('/map_single')
+def map_single():
+    #start_coords = (14.6091, 121.0223)
+    #folium_map = folium.Map(location=start_coords, zoom_start=14)
+    #return folium_map._repr_html_()
+    return render_template('map_single.html')
 
 @main.route('/posts')
 def posts():
