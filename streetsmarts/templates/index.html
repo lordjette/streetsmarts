@@ -86,6 +86,7 @@
                                 <li class="nav-item"><a class="page-scroll" href="#services">Services</a></li>
                                 <li class="nav-item"><a class="page-scroll" href="#projectohana">OHANA</a></li>
                                 <li class="nav-item"><a class="page-scroll" href="#about">About</a></li>
+                                <li class="nav-item"><a class="page-scroll" href="#portfolio">portfolio</a></li>
                                 <li class="nav-item"><a class="page-scroll" href="#team">Team</a></li>
                                 <li class="nav-item"><a class="page-scroll" href="#contact">Contact</a></li>
                             </ul>
@@ -279,6 +280,51 @@
 
         <iframe class="map", src="/map" width="100%" height="640" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-10">
+                    <div class="section-title text-center pb-25">
+                        <h3 class="text">&nbsp;</h3>
+                        <h3 class="text">Health Care Centers</3>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row justify-content-center">
+                <iframe class="map", src="/map_health" width="100%" height="440" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div> <!-- row --> 
+        </div> <!-- container -->
+
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-10">
+                    <div class="section-title text-center pb-25">
+                        <br>
+                        <h3 class="text">Financial Instituitions</h3>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row justify-content-center">
+                <iframe class="map", src="/map_finance" width="100%" height="440" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div> <!-- row --> 
+        </div> <!-- container -->
+
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-10">
+                    <div class="section-title text-center pb-25">
+                        <br>
+                        <h3 class="text">Supermarkets and Convenience Stores</h3>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row justify-content-center">
+                <iframe class="map", src="/map_grocery" width="100%" height="440" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div> <!-- row --> 
+        </div> <!-- container -->
+
+
     </section>
 
     <!--====== OHANA ENDS ======-->
@@ -350,7 +396,7 @@
                 </div>
                 <div class="col-lg-7">
                     <div class="about-image mt-50">
-                        <img src="{{ url_for('static', filename='images/about.jpg') }}" alt="about">
+                        <img src="{{ url_for('static', filename='images/about.png') }}" alt="about">
                     </div> <!-- faq image -->
                 </div>
             </div> <!-- row -->
@@ -373,7 +419,7 @@
                     <div class="col-lg-6 col-md-10">
                         <div class="section-title text-center pb-10">
                             <h3 class="title">Featured Works</h3>
-                            <p class="text">Explore our Open-source Heatmap for Amenities Nationwide Accessibility (Project OHANA) product outputs where you can make your own interactive heatmap, analytics and insights, and supported versions of other visualization tools.</p>
+                            <p class="text">Explore our Open-source Heatmap on Amenities Nationwide Accessibility product outputs where you can make your own interactive heatmap, analytics and insights, and supported versions of other visualization tools.</p>
                         </div> <!-- section title -->
                     </div>
                 </div> <!-- row -->
@@ -382,8 +428,8 @@
                         <div class="portfolio-menu text-center mt-50">
                             <ul>
                                 <li data-filter="*" class="active">ALL WORK</li>
-                                <li data-filter=".branding-4">BRANDING</li>
-                                <li data-filter=".marketing-4">MARKETING</li>
+                                <li data-filter=".branding-4">PROJECTS</li>
+                                <li data-filter=".marketing-4">DEVELOPMENT</li>
                                 <li data-filter=".planning-4">PLANNING</li>
                                 <li data-filter=".research-4">RESEARCH</li>
                             </ul>
@@ -455,7 +501,7 @@
                                         <div class="portfolio-overlay d-flex align-items-center justify-content-center">
                                             <div class="portfolio-content">
                                                 <div class="portfolio-icon">
-                                                    <a class="image-popup" href="{{ url_for('static', filename='images/portfolio/4.png') }}"><i class="lni lni-zoom-in"></i></a>
+                                                    <a class="image-popup" href="{{ url_for('static', filename='images/portfolio/4l.png') }}"><i class="lni lni-zoom-in"></i></a>
                                                     <img src="{{ url_for('static', filename='images/portfolio/shape.svg') }}" alt="shape" class="shape">
                                                 </div>
                                                 <div class="portfolio-icon">
@@ -512,7 +558,7 @@
                                         <div class="portfolio-overlay d-flex align-items-center justify-content-center">
                                             <div class="portfolio-content">
                                                 <div class="portfolio-icon">
-                                                    <a class="image-popup" href="{{ url_for('static', filename='images/portfolio/7.png') }}"><i class="lni lni-zoom-in"></i></a>
+                                                    <a class="image-popup" href="{{ url_for('static', filename='images/portfolio/7l.png') }}"><i class="lni lni-zoom-in"></i></a>
                                                     <img src="{{ url_for('static', filename='images/portfolio/shape.svg') }}" alt="shape" class="shape">
                                                 </div>
                                                 <div class="portfolio-icon">
@@ -723,7 +769,7 @@
                                     <div class="form-input mt-25">
                                         <label>Name</label>
                                         <div class="input-items default">
-                                            <input name="name" type="text" placeholder="Name">
+                                            <input name="name" type="text" placeholder="Name" required>
                                             <i class="lni lni-user"></i>
                                         </div>
                                     </div> <!-- form input -->
@@ -732,7 +778,7 @@
                                     <div class="form-input mt-25">
                                         <label>Email</label>
                                         <div class="input-items default">
-                                            <input type="email" name="email" placeholder="Email">
+                                            <input type="email" name="email" placeholder="Email" required>
                                             <i class="lni lni-envelope"></i>
                                         </div>
                                     </div> <!-- form input -->
@@ -741,7 +787,7 @@
                                     <div class="form-input mt-25">
                                         <label>Massage</label>
                                         <div class="input-items default">
-                                            <textarea name="massage" placeholder="Massage"></textarea>
+                                            <textarea name="massage" placeholder="Massage" required></textarea>
                                             <i class="lni lni-pencil-alt"></i>
                                         </div>
                                     </div> <!-- form input -->
@@ -779,7 +825,7 @@
                     </ul> <!-- social -->
                     <div class="footer-support text-center">
                         <span class="number">0936XXXXXXX</span>
-                        <span class="mail">lordjette.leigh@gmail.com.com</span>
+                        <span class="mail">lordjette.leigh@gmail.com</span>
                     </div>
                     <div class="copyright text-center mt-35">
                         <p class="text">Project OHANA by <a href="#" rel="nofollow">Streetsmarts</a> </p>
