@@ -71,7 +71,7 @@
                     <nav class="navbar navbar-expand-lg">
                        
                         <a class="navbar-brand" href="#">
-                            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+                            <img src="{{ url_for('static', filename='images/logo_old.png') }}" alt="Logo">
                         </a>
                         
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTwo" aria-controls="navbarTwo" aria-expanded="false" aria-label="Toggle navigation">
@@ -219,7 +219,7 @@
                         <div class="features-content">
                             <p class="text">Utilizes freely available and publicly-shared data, reproducible, and real-time</p>
                             <p>&nbsp;</p>
-                            <a class="features-btn" href="#">LEARN MORE</a>
+                            <!-- <a class="features-btn" href="#">LEARN MORE</a> -->
                         </div>
                     </div> <!-- single features -->
                 </div>
@@ -234,7 +234,7 @@
                         </div>
                         <div class="features-content">
                             <p class="text">Empowers users to choose the best option, allows to explore data and observe variable relationships with Data-Driven research, analytics and insights.</p>
-                            <a class="features-btn" href="#">LEARN MORE</a>
+                            <!-- <a class="features-btn" href="#">LEARN MORE</a> -->
                         </div>
                     </div> <!-- single features -->
                 </div>
@@ -250,7 +250,7 @@
                         <div class="features-content">
                             <p class="text">Enables seamless data integration to other data with adaptable ETL tools and platform. Allows collaboration among researchers, governments, and other stakeholders.
                                 </p>
-                            <a class="features-btn" href="#">LEARN MORE</a>
+                            <!-- <a class="features-btn" href="#">LEARN MORE</a> -->
                         </div>
                     </div> <!-- single features -->
                 </div>
@@ -270,7 +270,8 @@
                 <div class="col-lg-6 col-md-10">
                     <div class="section-title text-center pb-25">
                         <h3 class="title">Project OHANA</h3>
-                        <p class="text">Open-source Heatmap for Amenities Nationwide Accessibility</p>
+                        <h6 class="sub-title">Open-source Heatmap for Amenities Nationwide Accessibility</h6>
+                        <p class="text">Transforming open-source data to provide impactful data, insightful visualizations, and interactive heatmaps on the availability and accessibility of amenities and services in cities across ASEAN countries</p>
                     </div> <!-- section title -->
                 </div>
             </div> <!-- row -->
@@ -281,97 +282,180 @@
         </div> <!-- container -->
 
         <iframe class="map", src="/map" width="100%" height="640" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
         
     </section>
 
     <!--====== OHANA ENDS ======-->
-    
 
-    <!--====== FOUR BOX TWO PART START ======-->
+    <!--====== OHANA PART 2 START ======-->
+    <section id="ohana-2" class="about-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="faq-content mt-45">
+                        <div class="about-title">
+                            <h6 class="title">Per Amenity Type Accessibility Score</h6>
+                            <!-- <h6 class="sub-title">Health</h6> -->
+                            <div class="card-body">
+                                <p class="text">Project OHANA allows users to visualize amenity accessibility for each amenity categories. 
+                                    Gather insights and data as to which areas lack accessibility to certain types of amenities and services. 
+                                    Currently, Project OHANA contains six categories:
+                                </p>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item list-group-item-success sub-title">Health</li>
+                                    <li class="list-group-item sub-title">Education</li>
+                                    <li class="list-group-item sub-title">Finance</li>
+                                    <li class="list-group-item sub-title">Grocery</li>
+                                    <li class="list-group-item sub-title">Security</li>
+                                    <li class="list-group-item sub-title">Transportation</li>
+                                </ul>
+                            </div>
+                        </div> <!-- faq title -->
+                    </div> <!-- faq content -->
+                </div>
+                <div class="col-lg-7">
+                    <div class="about-image mt-50">
+                        <iframe class="map", src="/map_health" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div> <!-- faq image -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+    <!--====== OHANA PART 2 ENDS =====-->
 
-    <section id="fourbox" class="features-area">
+    <!--====== OHANA PART 3 START =====-->
+    <section id="projectohana-3" class="portfolio-area portfolio-four">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-10">
-                    <div class="section-title text-center pb-10">
-                        <h3 class="title">Products</h3>
-                        <!-- <p class="text">Stop wasting time and money designing and managing a website that doesn’t get results. Happiness guaranteed!</p> -->
-                    </div> <!-- row -->
+                    <div class="section-title text-center">
+                        <h5 class="title">Data-Driven Decisions and Insights</h5>
+                        <!-- <h6 class="sub-title">Open-source Heatmap for Amenities Nationwide Accessibility</h6>-->
+                        <p class="text">Users shall be able to use our data and data visualizations for different use cases and research areas.</p>
+                    </div>
                 </div>
-            </div> <!-- row -->
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-7 col-sm-9">
-                    <div class="single-features mt-40">
-                        <div class="features-title-icon d-flex justify-content-between">
-                            <img class="shape" src="{{ url_for('static', filename='images/about.jpg') }}" alt="Shape">
-                        </div>
-                    </div> <!-- single features -->
+            </div>
+        </div> <!-- container -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="about-image mt-50">
+                        <iframe class="map", src="/map_single" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div> <!-- faq image -->
                 </div>
-                <div class="col-lg-4 col-md-7 col-sm-9">
-                    <div class="single-features mt-40">
-                        <div class="features-title-icon d-flex justify-content-between">
-                            <img class="shape" src="{{ url_for('static', filename='images/about.jpg') }}" alt="Shape">
-                        </div>
-                    </div> <!-- single features -->
-                </div>
-                <div class="col-lg-4 col-md-7 col-sm-9">
-                    <div class="single-features mt-40">
-                        <div class="features-title-icon d-flex justify-content-between">
-                            <h4 class="features-title"><a href="#">Digital Marketing</a></h4>
-                            <div class="features-icon">
-                                <i class="lni lni-bolt"></i>
-                                <img class="shape" src="{{ url_for('static', filename='images/f-shape-1.svg') }}" alt="Shape">
+                <div class="col-lg-5">
+                    <div class="faq-content mt-45">
+                        <div class="about-title">
+                            <h3 class="title">Zone-based Analysis of Accessibility Score</h3>
+                            <!-- <h6 class="sub-title">Health</h6> -->
+                            <div class="card-body">
+                                <p class="text">Compare different zones to neighboring areas or the whole country. 
+                                    Pinpoint which locations have a lack of access to amenities and which ones are saturated.
+                                </p>
+                                <p class="text"><b>Zone Id:&nbsp; </b>2348</p>
+                                <p class="text"><b>City:&nbsp; </b>Mandaluyong</p>
+                                <p class="text"><b>Barangay:&nbsp; </b>Addition Hills</p>
+                                <p class="text"><b>Ave. Amenity Distance (in km):&nbsp; </b>3.30</p>
+                                <p class="text"><b>Number of Amenities:&nbsp; </b>5167</p>
                             </div>
-                        </div>
-                        <div class="features-content">
-                            <p class="text">Short description for the ones who look for something new. Short description for the ones who look for something new.</p>
-                            <a class="features-btn" href="#">LEARN MORE</a>
-                        </div>
-                    </div> <!-- single features -->
-                </div>
-            </div> <!-- row -->
-
-
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-7 col-sm-9">
-                    <div class="single-features mt-40">
-                        <div class="features-title-icon d-flex justify-content-between">
-                            <h4 class="features-title"><a href="#">Graphics Design</a></h4>
-                            <div class="features-icon">
-                                <i class="lni lni-brush"></i>
-                                <img class="shape" src="{{ url_for('static', filename='images/f-shape-1.svg') }}" alt="Shape">
+                            <div class="col-lg-12 about-image">
+                                <img src="{{ url_for('static', filename='images/portfolio/amenities_zone.png') }}", alt="">
                             </div>
-                        </div>
-                        <div class="features-content">
-                            <p class="text">Short description for the ones who look for something new. Short description for the ones who look for something new.</p>
-                            <a class="features-btn" href="#">LEARN MORE</a>
-                        </div>
-                    </div> <!-- single features -->
+                        </div> <!-- faq title -->
+                    </div> <!-- faq content -->
                 </div>
-                <div class="col-lg-4 col-md-7 col-sm-9">
-                    <div class="single-features mt-40">
-                        <div class="features-title-icon d-flex justify-content-between">
-                            <img class="shape" src="{{ url_for('static', filename='images/about.jpg') }}" alt="Shape">
-                        </div>
-                    </div> <!-- single features -->
-                </div>
-                <div class="col-lg-4 col-md-7 col-sm-9">
-                    <div class="single-features mt-40">
-                        <div class="features-title-icon d-flex justify-content-between">
-                            <img class="shape" src="{{ url_for('static', filename='images/about.jpg') }}" alt="Shape">
-                        </div>
-                    </div> <!-- single features -->
-                </div>
-
             </div> <!-- row -->
+        </div> <!-- container -->
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="faq-content mt-45">
+                        <div class="about-title">
+                            <h3 class="title">From Visualizations to Research Leads</h3>
+                            <!-- <h6 class="sub-title">Health</h6> -->
+                            <div class="card-body">
+                                <p class="text">Discover patterns to formulate hypothesis and data-driven research. 
+                                </p>
+                                <p class="text">
+                                    From our data, the barangay with the <b>lowest</b> amenity score in <b>Quezon City, PH</b> is <b>Bagong Silangan</b> while the <b>highest</b> is <b>South Triangle</b>. 
+                                </p>
+                                <br/>
+                                <p class="text"><b>Bagong Silangan</b> has two distinct geographical features that can explain its low amenity accessibility score: a) its lower portion is lying near the bank of Marikina river making it prone to flooding, and b) 25% of its composition are farmlands. 
+                                </p>
+                            </div>
+                        </div> <!-- faq title -->
+                    </div> <!-- faq content -->
+                </div>
+                <div class="col-lg-5">
+                    <div class="about-image mt-50">
+                        <img src="{{ url_for('static', filename='images/portfolio/silangan2.PNG') }}", alt="">
+                        <!-- <iframe class="map", src="/map_single" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+                    </div> <!-- faq image -->
+                </div>
+            </div> <!-- row -->
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="about-image mt-50">
+                        <img src="{{ url_for('static', filename='images/portfolio/triangle2.jpg') }}", alt="">
+                        <!-- <iframe class="map", src="/map_single" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+                    </div> <!-- faq image -->
+                </div>
+                <div class="col-lg-7">
+                    <div class="faq-content mt-45">
+                        <div class="about-title">
+                            <!-- <h6 class="sub-title">Health</h6> -->
+                            <div class="card-body">
+                                <p class="text"><b>South Triangle</b> is an area within Quezon City bordered by main roads specifically Quezon Avenue, Timog Avenue, and EDSA jampacked with restaurants and eclectic establishments and also known for its vibrant night life from its upscale cocktail bars, gay bars, and karaoke/live music venues. 
+                                </p>
+                                <br/>
+                                <p class="text">
+                                    It also serves as home for two of the leading local TV networks across Philippines. 
+                                </p>
+                            </div>
+                        </div> <!-- faq title -->
+                    </div> <!-- faq content -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
 
 
-
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="faq-content mt-45">
+                        <div class="about-title">
+                            <h3 class="title">Seamless Integration of New Data</h3>
+                            <!-- <h6 class="sub-title">Health</h6> -->
+                            <div class="card-body">
+                                <p class="text">Users could easily <b>integrate</b> their <b>own</b> data to our data and create new visualizations and observe patterns that may aid them on specific research and analysis. 
+                                </p>
+                                <br/>
+                                <p class="text">Here are examples of OHANA's data with data from <b>Municipalities Competitive Index (CMCI)</b> from dti.gov.ph such as <b>Cost of Doing Business</b> and <b>Business Registration Efficiency Index.</b>
+                                </p>
+                            </div>
+                        </div> <!-- faq title -->
+                    </div> <!-- faq content -->
+                </div>
+                <div class="col-lg-3">
+                    <div class="about-image mt-50">
+                        <img src="{{ url_for('static', filename='images/portfolio/cost_of_doing_business.png') }}", alt="">
+                        <!-- <iframe class="map", src="/map_single" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+                    </div> <!-- faq image -->
+                </div>
+                <div class="col-lg-3">
+                    <div class="about-image mt-50">
+                        <img src="{{ url_for('static', filename='images/portfolio/registration_efficiency.png') }}", alt="">
+                        <!-- <iframe class="map", src="/map_single" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+                    </div> <!-- faq image -->
+                </div>
+            </div> <!-- row -->
         </div> <!-- container -->
     </section>
 
-    <!--====== FOUR BOX TWO PART ENDS ======-->
+    <!--====== OHANA PART 3 ENDS =====-->
 
 
 
@@ -452,8 +536,6 @@
     <!--====== ABOUT PART ENDS ======-->
     
     <!--====== TESTIMONIAL PART START ======-->
-
-   
 
     <!--====== TESTIMONIAL PART ENDS ======-->
 
@@ -861,7 +943,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="footer-logo text-center">
-                        <a class="mt-30" href="#"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo"></a>
+                        <a class="mt-30" href="#"><img src="{{ url_for('static', filename='images/logo_old.png') }}" alt="Logo"></a>
                     </div> <!-- footer logo -->
                     <ul class="social text-center mt-60">
                         <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
