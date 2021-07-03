@@ -32,6 +32,30 @@ def map():
     #return folium_map._repr_html_()
     return render_template('map.html')
 
+@main.route('/map_grocery')
+def map_grocery():
+    return render_template('map_grocery.html')
+
+@main.route('/map_educ')
+def map_educ():
+    return render_template('map_educ.html')
+
+@main.route('/map_security')
+def map_security():
+    return render_template('map_security.html')
+
+@main.route('/map_finance')
+def map_finance():
+    return render_template('map_finance.html')
+
+@main.route('/map_transpo')
+def map_transpo():
+    return render_template('map_transpo.html')
+
+@main.route('/map_health')
+def map_health():
+    return render_template('map_health.html')
+
 @main.route('/posts')
 def posts():
 
