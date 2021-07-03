@@ -15,10 +15,10 @@ $(function() {
         var scroll = $(window).scrollTop();
         if (scroll < 20) {
             $(".navbar-area").removeClass("sticky");
-            $(".navbar-area img").attr("src", "/static/images/logo.svg");
+            $(".navbar-area img").attr("src", "/static/images/logo.png");
         } else {
             $(".navbar-area").addClass("sticky");
-            $(".navbar-area img").attr("src", "/static/images/logo-2.svg");
+            $(".navbar-area img").attr("src", "/static/images/logo-2.png");
         }
     });
 
